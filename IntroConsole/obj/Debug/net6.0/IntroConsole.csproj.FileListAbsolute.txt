@@ -1,0 +1,15 @@
+C:\Users\reyes\Documents\.NET course\IntroConsole\bin\Debug\net6.0\IntroConsole.exe
+C:\Users\reyes\Documents\.NET course\IntroConsole\bin\Debug\net6.0\IntroConsole.deps.json
+C:\Users\reyes\Documents\.NET course\IntroConsole\bin\Debug\net6.0\IntroConsole.runtimeconfig.json
+C:\Users\reyes\Documents\.NET course\IntroConsole\bin\Debug\net6.0\IntroConsole.dll
+C:\Users\reyes\Documents\.NET course\IntroConsole\bin\Debug\net6.0\IntroConsole.pdb
+C:\Users\reyes\Documents\.NET course\IntroConsole\obj\Debug\net6.0\IntroConsole.csproj.AssemblyReference.cache
+C:\Users\reyes\Documents\.NET course\IntroConsole\obj\Debug\net6.0\IntroConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\reyes\Documents\.NET course\IntroConsole\obj\Debug\net6.0\IntroConsole.AssemblyInfoInputs.cache
+C:\Users\reyes\Documents\.NET course\IntroConsole\obj\Debug\net6.0\IntroConsole.AssemblyInfo.cs
+C:\Users\reyes\Documents\.NET course\IntroConsole\obj\Debug\net6.0\IntroConsole.csproj.CoreCompileInputs.cache
+C:\Users\reyes\Documents\.NET course\IntroConsole\obj\Debug\net6.0\IntroConsole.dll
+C:\Users\reyes\Documents\.NET course\IntroConsole\obj\Debug\net6.0\refint\IntroConsole.dll
+C:\Users\reyes\Documents\.NET course\IntroConsole\obj\Debug\net6.0\IntroConsole.pdb
+C:\Users\reyes\Documents\.NET course\IntroConsole\obj\Debug\net6.0\IntroConsole.genruntimeconfig.cache
+C:\Users\reyes\Documents\.NET course\IntroConsole\obj\Debug\net6.0\ref\IntroConsole.dll
