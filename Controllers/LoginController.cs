@@ -34,6 +34,19 @@ public class LoginController : ControllerBase
         return Ok( new { token = jwtToken } );
     }
 
+    [HttpPost("authenticateClient")]
+    public async Task<IActionResult>LoginClient(ClientDto clientDto)
+    {
+        var client = await loginService.GetClient(clientDto);
+
+        if(client is null)
+            return BadRequest(new { message = "Crendeciales inválidas."});
+
+         string jwtToken = GenerateClientToken(client);
+
+        return Ok( new { token = jwtToken } );
+    }
+
     private string GenerateToken(Administrator admin)
     {
         var claims = new[]
@@ -54,5 +67,28 @@ public class LoginController : ControllerBase
         string token = new JwtSecurityTokenHandler().WriteToken(securityToken);
 
         return token;
+    }
+
+    private string GenerateClientToken(Client client)
+    {
+        var claims = new[]
+        {
+            new Claim(ClaimTypes.Name, client.Name),
+            new Claim(ClaimTypes.Email, client.Email),
+        };
+
+        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config.GetSection("JWT:Key").Value));
+        var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
+
+        var securityToken = new JwtSecurityToken(
+            claims: claims,
+            expires: DateTime.Now.AddMinutes(60),
+            signingCredentials: creds
+        );
+
+        string token = new JwtSecurityTokenHandler().WriteToken(securityToken);
+
+        return token;
+
     }
 }
