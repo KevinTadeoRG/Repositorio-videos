@@ -75,6 +75,7 @@ public class LoginController : ControllerBase
         {
             new Claim(ClaimTypes.Name, client.Name),
             new Claim(ClaimTypes.Email, client.Email),
+            new Claim("Client", "Client")
         };
 
         var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config.GetSection("JWT:Key").Value));

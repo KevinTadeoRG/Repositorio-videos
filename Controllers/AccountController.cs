@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace BankAPI.Controllers;
 
-[Authorize]
+[Authorize(Policy = "SuperAdmin")]
 [ApiController]
 [Route("api/[controller]")]
 
